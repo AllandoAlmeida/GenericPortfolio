@@ -1,0 +1,60 @@
+.container {
+    box-sizing: border-box;
+    width: clamp(21.25rem, 100%, 56.25rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.9375rem;
+    padding: .625rem;
+    border-top: .0313rem solid var(--color-white);
+    border-bottom: .0313rem solid var(--color-white);
+}
+
+.contactSection {
+    display: flex;
+    flex-direction: column;
+    gap: .9375rem;
+    width: 50%;
+}
+
+.reservationOfRights {
+    width: 50%;
+    text-align: end;
+}
+
+
+.icon {
+    display: flex;
+    gap: 1.875rem;
+}
+
+@media (max-width: 37.5rem) {
+    .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 1.25rem;
+        padding: 0;
+        margin-top: .9375rem;
+    }
+
+    .contactSection {
+        order: 2;
+        align-items: center;
+        justify-content: center;
+        margin-top: .9375rem;
+    }
+
+    ul {
+        margin: .625rem;
+    }
+
+    .reservationOfRights {
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: .9375rem;
+    }
+}

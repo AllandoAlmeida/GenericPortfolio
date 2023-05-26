@@ -1,0 +1,37 @@
+.container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6.25rem;
+}
+
+.sectionWelcomeTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: clamp(21.875rem, 40%, 37.5rem);
+    list-style-type: none;
+    height: 17.3125rem;
+
+}
+
+.userName {
+    color: var(--color-primary);
+}
+
+.label {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+}
+
+@media (max-width: 37.5rem) {
+    .container {
+        gap: 1.75rem;
+        padding: 0;
+        margin-top: 3.75rem;
+    }
+}

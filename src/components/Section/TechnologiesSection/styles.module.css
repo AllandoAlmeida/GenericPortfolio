@@ -1,0 +1,22 @@
+.card {
+    box-sizing: border-box;
+    width: 17.9375rem;
+    height: 5.375rem;
+    border: .0625rem solid var(--color-white);
+    border-radius: .75rem;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card>img {
+    width: 2rem;
+}
+
+@media (max-width: 37.5rem) {
+    .card {
+        width: 21.875rem;
+
+    }
+}

@@ -1,0 +1,39 @@
+.container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3.9375rem;
+    padding: .625rem;
+}
+
+.sectionTitle {
+    width: 25%;
+}
+
+.descriptionAboutMe {
+    box-sizing: border-box;
+    width: clamp(21.25rem, 47vw, 38.4375rem);
+    font-size: var(--font-weight-7);
+    font-weight: var(--font-weight-2);
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.title2 {
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-1);
+}
+
+@media (max-width: 37.5rem) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.25rem;
+    }
+
+    .sectionTitle {
+        width: 100%;
+    }
+
+}
