@@ -16,3 +16,4 @@ export const projects = [
     descricao: "Descrição do projeto",
   },
 ];
+
