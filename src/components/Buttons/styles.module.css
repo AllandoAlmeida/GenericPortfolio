@@ -1,0 +1,84 @@
+button{
+  cursor: pointer;
+}
+
+
+a{
+  color: var(--color-primary);
+}
+
+.BtnContact {
+  box-sizing: border-box;
+  height: 2.8125rem;
+  width: 8.125rem;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border-radius: .625rem;
+}
+
+.linkNav {
+  border: .0625rem solid var(--color-black);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  width: 3.75rem;
+  height: 2.8125rem;
+  justify-content: center;
+  border-radius: .625rem;
+}
+
+.knowMore {
+  height: 2.8125rem;
+  width: 8.125rem;
+  border-radius: .625rem;
+  border: var(--color-primary);
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+a:hover{
+  color: var(--color-primary-Hover);
+}
+
+
+.BtnContact:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary-Hover);
+  border: .125rem solid var(--color-primary);
+}
+
+.linkNav:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary-Hover);
+  border: .125rem solid var(--color-primary);
+}
+
+.knowMore:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary-Hover);
+  border: .125rem solid var(--color-primary);
+}
+
+.items {
+  display: flex;
+  gap: 3.75rem;
+}
+
+@media (max-width: 37.5rem) {
+  .items {
+    display: flex;
+    width: clamp(18.75rem, 100%, 56.25rem);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 23.75rem) {
+  .items {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+

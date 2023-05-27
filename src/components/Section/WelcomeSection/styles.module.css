@@ -6,21 +6,33 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 6.25rem;
+    height: max-content;
 }
 
 .sectionWelcomeTitle {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 40px;
     width: clamp(21.875rem, 40%, 37.5rem);
     list-style-type: none;
-    height: 17.3125rem;
+    height: max-content;
 
 }
 
-.userName {
+.sectionPerfil {
     color: var(--color-primary);
+    display: flex;
+    gap: .9375rem;
+    align-items: flex-end;
+    font-weight: bold ;
+
 }
+.paragraph{
+    font-size: var(--font-weight-7);
+    font-weight: var(--font-weight-2);
+    text-align: justify;
+    line-height: 1.7;
+  }
 
 .label {
     background-color: var(--color-primary);
@@ -28,6 +40,13 @@
 
 }
 
+/* .profile{
+    width: 52px;
+    border-radius: 15%;
+    border: 2px solid hsl(133, 64%, 35%);
+
+}
+ */
 @media (max-width: 37.5rem) {
     .container {
         gap: 1.75rem;

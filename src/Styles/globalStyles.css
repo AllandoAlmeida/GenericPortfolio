@@ -18,10 +18,13 @@
 
   --font-weight-1: bold;
   --font-weight-2: regular;
+
 }
 
-body, html {
+body,
+html {
   width: 100vw;
+
 }
 
 body {
@@ -29,9 +32,10 @@ body {
   background-color: #000000;
   color: white;
   overflow-x: hidden;
+
 }
 
-li{
+li {
   list-style-type: none;
 }
 
@@ -39,19 +43,16 @@ li{
 
   width: clamp(24.375rem, 93%, 56.25rem);
   margin: auto;
+
 }
 
 .SectionMain {
- width: clamp(24.375rem, 100%, 56.25rem);
+  width: clamp(24.375rem, 100%, 56.25rem);
 }
 
-img{
-  cursor: pointer;
-}
-
-@media (max-width: 600px){
-  .containeMain{
+@media (max-width: 37.5rem) {
+  .containeMain {
     box-sizing: border-box;
-    margin: 15px;
+    margin: .9375rem;
   }
 }

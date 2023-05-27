@@ -5,49 +5,54 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 63px;
-    padding: 10px;
-    border-top: .5008px solid var(--color-white);
-    border-bottom: .5008px solid var(--color-white);
+    margin-top: 3.9375rem;
+    padding: .625rem;
+    border-top: .0313rem solid var(--color-white);
+    border-bottom: .0313rem solid var(--color-white);
 }
 
 .contactSection {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    width: 50%;
+    gap: .9375rem;
+    width: 45%;
 }
 
 .reservationOfRights {
-    width: 50%;
+    width: 55%;
     text-align: end;
 }
 
+.reservationOfRightsTtile {
+    font-size: 1rem;
+
+}
 
 .icon {
     display: flex;
-    gap: 30px;
+    gap: 1.875rem;
+    cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
     .container {
         flex-direction: column-reverse;
         justify-content: center;
         width: 100%;
-        gap: 20px;
+        gap: 1.25rem;
         padding: 0;
-        margin-top: 15px;
+        margin-top: .9375rem;
     }
 
     .contactSection {
         order: 2;
         align-items: center;
         justify-content: center;
-        margin-top: 15px;
+        margin-top: .9375rem;
     }
 
     ul {
-        margin: 10px;
+        margin: .625rem;
     }
 
     .reservationOfRights {
@@ -56,6 +61,6 @@
         justify-content: center;
         flex-wrap: wrap;
         text-align: center;
-        margin-bottom: 15px;
+        margin-bottom: .9375rem;
     }
 }

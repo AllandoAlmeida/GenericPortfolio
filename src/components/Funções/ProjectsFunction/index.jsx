@@ -1,15 +1,25 @@
-import { projects } from "../../../data/projects"
-import { ProjectCard } from "../../Section/ProjectsSection"
-import styles from './styles.module.css'
+import React, { useEffect, useState } from 'react';
+import { ProjectCard } from "../../Section/ProjectsSection";
+import styles from './styles.module.css';
+import { searchRepos } from '../../../components/Funções/requests/requests';
 
-projects
+export const ProjectsSection = () => {
+  const [projects, setProjects] = useState([]);
 
-export const ProjectsSection = () =>{
-    return (
-      <div className={styles.sectionProjects}>
-            {projects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
-            ))}
-          </div>
-    )
-}
+  useEffect(() => {
+    async function fetchProjects() {
+      const projects = await searchRepos();
+      setProjects(projects);
+    }
+
+    fetchProjects();
+  }, []);
+
+  return (
+    <div className={styles.sectionProjects}>
+      {projects.map((project, index) => (
+        <ProjectCard key={index} project={project} />
+      ))}
+    </div>
+  );
+};

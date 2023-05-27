@@ -1,25 +1,48 @@
 
-import { username } from "../../../data/user"
 import { Banner } from "../../../fragments/Banner"
+import { useEffect, useState } from 'react';
+import { searchUser } from '../../Funções/requests/requests.js';
+
 import styles from './styles.module.css'
-import buttons from '../../../Styles/buttons.module.css'
+import { KnowMore } from "../../Buttons";
+
 
 
 export const WelcomeSection = () => {
-    return (
-        <section className={styles.container}>
-            <ul className={styles.sectionWelcomeTitle}>
-                <li className={styles.userName} >{username}</li>
-                <li className="title1_2 convite">
-                    Bem vindo ao meu portfólio
-                </li>
-                <li className="paragrafh">Uma frase interessante sobre mim</li>
-                <button className={buttons.label}>Saiba mais</button>
-            </ul>
-            <li>
-                <Banner />
-            </li>
+  const [user, setUser] = useState(null);
 
-        </section>
-    )
+  useEffect(() => {
+    const fetchUser = async () => {
+      const userData = await searchUser();
+      setUser(userData);
+    };
+
+    fetchUser();
+  }, []);
+
+  if (!user) {
+    return null;
+  }
+  return (
+    <section className={styles.container}>
+      <ul className={styles.sectionWelcomeTitle}>
+        <li className={styles.sectionPerfil} >
+
+          {/* seção foto de perfil nao solicitado na atividade evento futuro 
+           <img src={user.avatar_url} alt='imagem de perfil do usuário logado' className={styles.profile} /> */}
+
+          <figcaption>{user.username}</figcaption>
+        </li>
+        <li className="title1_2 convite">
+          Bem vindo ao meu portfólio
+        </li>
+        <li className={styles.paragraph}>{user.bio}</li>
+        <KnowMore />
+      </ul>
+      <li>
+        <Banner />
+      </li>
+
+    </section>
+  )
 }
