@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ProjectCard } from "../../Section/ProjectsSection";
 import styles from './styles.module.css';
-import { searchRepos } from '../../../components/Funções/requests/requests';
+import { searchRepos } from '../../../components/RenderFunction/requests/requests';
 
 export const ProjectsSection = () => {
   const [projects, setProjects] = useState([]);
@@ -16,10 +16,10 @@ export const ProjectsSection = () => {
   }, []);
 
   return (
-    <div className={styles.sectionProjects}>
+    <section className={styles.container}>
       {projects.map((project, index) => (
         <ProjectCard key={index} project={project} />
       ))}
-    </div>
+    </section>
   );
 };

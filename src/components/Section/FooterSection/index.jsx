@@ -1,9 +1,9 @@
-import gitHub from '../../../assets/github-icon.png'
-import whatsApp from '../../../assets/whatsapp-icon.png'
-import linkedin from '../../../assets/linkedin-icon.png'
-import styles from './styles.module.css'
+import gitHub from '../../../assets/github-icon.png';
+import whatsApp from '../../../assets/whatsapp-icon.png';
+import linkedin from '../../../assets/linkedin-icon.png';
+import styles from './styles.module.css';
 import { useEffect, useState } from 'react';
-import { searchUser } from '../../Funções/requests/requests.js';
+import { searchUser } from '../../RenderFunction/requests/requests.js';
 import { contact } from '../../../data/contacts.js';
 
 export const Footer = () => {

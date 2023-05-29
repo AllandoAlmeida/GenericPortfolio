@@ -1,4 +1,17 @@
-.tech {
-    margin: 6.25rem 0rem 1.75rem 0;
+.container {
+    box-sizing: border-box;
     width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3.93rem auto 0 auto;
+    padding: 0 29px;
+}
+
+.paragrafh{
+  
+    text-align: start;
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-1);
 }

@@ -3,13 +3,14 @@ import gitHub from '../../../assets/git-icon.png'
 
 export const ProjectCard = ({ project }) => {
     return (
-        <div id={styles.card} className={styles.Title}>
-            <div className={styles.projectCardTitle}>
+        <ul id={styles.card} >
+            <li className={styles.container}>
                 <h1 className="title3">{project.name}</h1>
                 <img src={gitHub} alt="logo do GitHub" id={styles.IconGitHub} />
-            </div>
-            <p className="paragrafh">{project.description}</p>
+            </li>
+            <li className={styles.paragrafh}>{project.description}
             <a href={project.html_url} className={styles.link} target='_blank'>Saiba mais</a>
-        </div>
+            </li>
+        </ul>
     );
 };

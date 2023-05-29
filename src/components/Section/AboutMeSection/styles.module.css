@@ -1,9 +1,13 @@
 .container {
     box-sizing: border-box;
+    width: 100%;
+    max-width: 900px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 3.9375rem;
+    margin: 3.93rem auto 0 auto;
+    padding: 0 auto;
+    
 }
 
 .sectionTitle {
@@ -12,7 +16,7 @@
 
 .descriptionAboutMe {
     box-sizing: border-box;
-    width: clamp(21.25rem, 47vw, 38.4375rem);
+    width: clamp(340px, 47vw, 615px);
     font-size: var(--font-weight-7);
     font-weight: var(--font-weight-2);
     text-align: justify;

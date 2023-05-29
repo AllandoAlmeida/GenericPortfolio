@@ -21,38 +21,17 @@
 
 }
 
-body,
-html {
-  width: 100vw;
-
-}
-
 body {
-
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
   background-color: #000000;
   color: white;
-  overflow-x: hidden;
+  align-items: center;
+  padding: 0 25px 0 25px;
 
 }
 
 li {
   list-style-type: none;
-}
-
-.containeMain {
-
-  width: clamp(24.375rem, 93%, 56.25rem);
-  margin: auto;
-
-}
-
-.SectionMain {
-  width: clamp(24.375rem, 100%, 56.25rem);
-}
-
-@media (max-width: 37.5rem) {
-  .containeMain {
-    box-sizing: border-box;
-    margin: .9375rem;
-  }
 }

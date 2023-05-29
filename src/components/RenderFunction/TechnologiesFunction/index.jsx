@@ -5,10 +5,10 @@ import styles from './styles.module.css'
 
 export const TechnologiesSection = () => {
   return (
-    <div className={styles.sectionLanguages}>
+    <sectioin className={styles.container}>
       {technologies.map((technology, index) => (
         <TechCard key={index} technology={technology} />
       ))}
-    </div>
+    </sectioin>
   )
 }

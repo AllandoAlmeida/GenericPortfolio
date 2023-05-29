@@ -1,7 +1,7 @@
 
 import { Banner } from "../../../fragments/Banner"
 import { useEffect, useState } from 'react';
-import { searchUser } from '../../Funções/requests/requests.js';
+import { searchUser } from '../../RenderFunction/requests/requests.js';
 
 import styles from './styles.module.css'
 import { KnowMore } from "../../Buttons";
@@ -27,11 +27,7 @@ export const WelcomeSection = () => {
     <section className={styles.container}>
       <ul className={styles.sectionWelcomeTitle}>
         <li className={styles.sectionPerfil} >
-
-          {/* seção foto de perfil nao solicitado na atividade evento futuro 
-           <img src={user.avatar_url} alt='imagem de perfil do usuário logado' className={styles.profile} /> */}
-
-          <figcaption>{user.username}</figcaption>
+          <p>{user.username}</p>
         </li>
         <li className="title1_2 convite">
           Bem vindo ao meu portfólio

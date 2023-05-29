@@ -13,7 +13,7 @@ a{
   width: 8.125rem;
   color: var(--color-white);
   background-color: var(--color-primary);
-  border-radius: .625rem;
+  border-radius: .75rem;
 }
 
 .linkNav {
@@ -23,13 +23,13 @@ a{
   width: 3.75rem;
   height: 2.8125rem;
   justify-content: center;
-  border-radius: .625rem;
+  border-radius: 1.5625rem;
 }
 
 .knowMore {
   height: 2.8125rem;
   width: 8.125rem;
-  border-radius: .625rem;
+  border-radius: 12px;
   border: var(--color-primary);
   color: var(--color-white);
   background-color: var(--color-primary);
@@ -71,14 +71,6 @@ a:hover{
   }
 }
 
-@media (max-width: 23.75rem) {
-  .items {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-}
+
 
 

@@ -1,21 +1,26 @@
 .container {
     box-sizing: border-box;
     width: 100%;
+    max-width: 900px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 3.93rem auto 0 auto;
+    padding: 0 auto;
     align-items: center;
-    margin-top: 3.9375rem;
-    padding: .625rem;
     border-top: .0313rem solid var(--color-white);
     border-bottom: .0313rem solid var(--color-white);
+    margin-bottom: 32px;
+
 }
 
 .contactSection {
     display: flex;
     flex-direction: column;
     gap: .9375rem;
+    margin: 15px 0;
     width: 45%;
+    align-items: flex-start;
 }
 
 .reservationOfRights {
